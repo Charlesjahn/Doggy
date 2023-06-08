@@ -13,7 +13,7 @@ dropdown.addEventListener('change', function (e) {
 
 //create a variable to import the image
 const playerImage = new Image();
-playerImage.src = '../resource/shadow_dog.png'
+playerImage.src = './resource/shadow_dog.png'
 
 //image width divided by the colunms, and image height divide by rowns
 const spriteWidth = 575;
