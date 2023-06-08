@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Test</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="controls">
+            <label for="animation-select">Animation:</label>
+            <select id="animation-select" name="animation-select">
+                <option value="idle">Idle</option>
+                <option value="jump">Jump</option>
+                <option value="fall">Fall</option>
+                <option value="run">Run</option>
+                <option value="dizzy">Dizzy</option>
+                <option value="sit">Sit</option>
+                <option value="roll">Roll</option>
+                <option value="bit">Bit</option>
+                <option value="ko">KO</option>
+                <option value="getHit">Get Hit</option>
+            </select>
+        </div>
+    </header>
+    <canvas id="canvasPlayer"></canvas>
+
+    <script src="../js/scriptPlayer.js"></script>
+</body>
+
+</html>
