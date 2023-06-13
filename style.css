@@ -1,13 +1,24 @@
 :root {
-    --color-silver: rgb(191, 191, 191, 1);
     --color-darkGrey: rgb(74, 74, 74, 1);
-    --color-white: rgb(255, 255, 255, 1);
     --color-black: rgb(0, 0, 0, 1);
+    --color-white: rgb(233, 233, 233);
+    --color-darkBlue1: rgb(2, 19, 35);
+    --color-black1: rgb(14, 14, 14);
+    --color-black1trans: rgb(14, 14, 14, 0.75);
+    --color-silver: rgb(192, 192, 192);
+    --color-shineblue: rgb(77, 255, 255);
+    --color-lightblue: rgb(76, 162, 244);
+    --color-lightpink: rgb(248, 78, 146);
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -33,22 +44,6 @@ body {
     font-size: 25px;
 }
 
-/* CSS para alinhar itens horizontalmente */
-header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 80px;
-    padding: 0 20px;
-    background-color: var(--color-darkGrey);
-    color: var(--color-white);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 /* remove the arrow in the select*/
 /* for microsoft edge and internet explorer */
 select::-ms-expand {
@@ -68,4 +63,52 @@ select {
     padding: 8px 12px;
     font-size: 16px;
     text-align: center;
+}
+
+/* CSS header */
+#logo_CJ {
+    width: 60px;
+    margin-left: 1%;
+}
+
+.header,
+.nagivation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99999;
+}
+
+.header {
+    position: fixed;
+    background-color: var(--color-darkBlue1);
+    box-shadow: 1px 1px 4px var(--color-lightblue);
+    height: 5.1em;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: var(--color-white);
+}
+
+.nagivation_header {
+    padding: 0 10%;
+    gap: 5em;
+    z-index: 999;
+}
+
+.nagivation_header a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--color-shineblue);
+    transition: .6s;
+}
+
+.nagivation_header :hover {
+    color: var(--color-lightpink);
 }
